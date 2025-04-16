@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Vibe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    header
+    {
+        background-color: white;
+        font-family: sans-serif;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="images_coding/backbutton.png" alt="Backbutton" class="backbutton" id="back-button" >
+        <div class="logo">
+            <img src="images_coding/logo.png" alt="Perfume Icon" class="logo-icon">
+            <span class="green-dot"></span> <span class="brand">FYV</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('choose-perfume')">Choose</a></li>
+                <li><a href="#" onclick="showSection('apply-perfume')" class="active">Apply</a></li>
+                <li><a href="#" onclick="showSection('store-perfume')">Storage</a></li>
+                <li><a href="#" onclick="showSection('tips-fun')">Tips</a></li>
+                <li><a href="#" onclick="showSection('seasonal-perfume')">Seasonal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Choose Perfume Section -->
+    <section id="choose-perfume" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #FEF4DB;">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline class="hero-video" id="chooseVideo">
+                  <source src="images_coding/choose_herovideo.mp4" type="video/mp4">
+                </video>
+                <button class="video-toggle" id="videoToggle" aria-label="Toggle video playback">⏸️</button>
+              </div>
+            <div class="hero-text">
+                <h1>How to <br> <strong>Choose Perfume</strong></h1>
+                <br>
+                <p>A quick guide to picking the right scent for you.</p>
+            </div>
+        </div>
+
+        <section class="explore">
+            <h2>Explore Your Own Vibe</h2>
+            <p>Find your vibe through scent wisdom and inspiration</p>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid-item" onclick="showSection('fragrance-details')">
+                <img src="images_coding/types_fragrance.jpg" alt="Types of Fragrances">
+                <p>Types of Fragrances</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Perfume Concentration Levels')">
+                <img src="images_coding/perfume_concentrate_grid.jpg" alt="Perfume Concentration Levels">
+                <p>Perfume Concentration Levels</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Test and Select a Perfume Level')">
+                <img src="images_coding/perfume_level_grid.jpg" alt="Test and Select a Perfume">
+                <p>Test and Select a Perfume Level</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Based on Occasion & Personal Preference')">
+                <img src="images_coding/occasion.jpg" alt="Based on Occasion & Preference">
+                <p>Based on Occasion<br>& Personal Preference</p>
+            </div>
+        </section>
+
+        <section class="quote">
+            <p>Scent is your own Story, You choose how it is told</p>
+        </section>
+    </section>
+
+    <!-- Types of Fragrances Details Section -->
+    <section id="fragrance-details" class="content-section hidden fade-in">
+        <div class="back-button" onclick="showSection('choose-perfume')"></div>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images_coding/types_fragrance.jpg" alt="Fragrance Categories">
+            </div>
+        </div>
+
+        <section class="types explain">
+            <h1>Types of Fragrances</h1> 
+            <p>Description about different fragrance types.</p>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid-item" onclick="showSection('floral description')">
+                <img src="images_coding/floral.jpg" alt="Floral">
+                <p>Floral</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Woody description')">
+                <img src="images_coding/woody.jpg" alt="Woody">
+                <p>Woody</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Citrus description')">
+                <img src="images_coding/citrus.jpg" alt="Citrus">
+                <p>Citrus</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Oriental description')">
+                <img src="images_coding/oriental.jpg" alt="Oriental">
+                <p>Oriental</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Floral Detail Section -->
+<section id="floral description" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #FFCDC4;">
+        <div class="hero-text">
+            <h1><strong>Floral</strong></h1>
+            <p>Flowers do not tell, they just show</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/floral.jpg" alt="Floral Fragrance Image">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Description foral 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Description</h4><br>
+                <p>Floral is one of the most classic and beloved fragrance families in the world of perfume. 
+                    Inspired by flowers, this scent family captures the soft, delicate beauty of nature. 
+                    It typically features notes like rose, jasmine, lilac, peony, gardenia, and tuberose—either 
+                    as a single floral note or a bouquet of several blended together. Floral scents are often 
+                    associated with femininity and romance, but in recent years, genderless floral perfumes 
+                    have become more popular as well. Light and bright florals evoke a fresh springtime vibe, 
+                    while deeper, powdery florals can feel elegant and sophisticated. Depending on the composition,
+                     floral fragrances can be sweet, fresh, slightly spicy, or combined with musky or woody notes 
+                     for added depth. They are versatile, approachable, and perfect for everyday wear.</p>
+                
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/chanel_no5.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <!-- Woody Detail Section -->
+    <section id="Woody description" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #D3C5AC;">
+            <div class="hero-text">
+                <h1><strong>Woody</strong></h1>
+                <p>You can smell the forest</p>
+            </div>
+            <div class="hero-image">
+                <img src="images_coding/woody.jpg" alt="Woody Fragrance Image">
+            </div>
+        </div>
+    
+        <section class="grid-section" style="background-color: #FEFFF5;">
+            <!-- Description foral 1 -->
+            <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                <div style="flex: 1;">
+                    <h4>Description</h4><br>
+                    <p>Woody fragrances are warm, earthy, and grounding—often evoking the feeling of walking
+                        through a quiet forest. These scents are centered around natural elements like sandalwood, 
+                        cedarwood, vetiver, and patchouli. With their smooth, dry, and sometimes slightly smoky 
+                        character, woody perfumes offer a sense of depth, stability, and sophistication. Woody 
+                        scents are often seen as more mature or mysterious, and they’re commonly found in men’s 
+                        fragrances. However, many unisex and women’s perfumes also use woody notes to add richness 
+                        and balance. Depending on how they're blended, woody fragrances can lean fresh and clean, 
+                        creamy and soft, or bold and spicy. They’re especially popular in fall and winter, when 
+                        the cozy, enveloping nature of these scents complements the cooler weather.</p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="images_coding/lelabo_santal.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Citrus Detail Section -->
+    <section id="Citrus description" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #E9A3CA;">
+            <div class="hero-text">
+                <h1><strong>Citrus</strong></h1>
+                <p>You can feel cool and refreshing</p>
+            </div>
+            <div class="hero-image">
+                <img src="images_coding/citrus.jpg" alt="Citrus Fragrance Image">
+            </div>
+        </div>
+    
+        <section class="grid-section" style="background-color: #FEFFF5;">
+            <!-- Description foral 1 -->
+            <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                <div style="flex: 1;">
+                    <h4>Description</h4><br>
+                    <p>Citrus fragrances are fresh, bright, and full of energy. They typically feature notes 
+                        from fruits like lemon, bergamot, grapefruit, orange, and mandarin—often paired with 
+                        light florals or herbs to enhance their zesty character. These scents are known for 
+                        their clean, sparkling quality and are perfect for anyone who enjoys an uplifting, 
+                        easygoing vibe. Because of their crisp and refreshing nature, citrus perfumes are 
+                        ideal for warm weather and casual daytime wear. They're a popular choice for summer 
+                        or active days when you want something light that doesn’t overwhelm. Citrus scents 
+                        often fade faster than heavier fragrance types, but they leave behind a fresh and 
+                        breezy impression. They're also great for layering or as a starter scent for those 
+                        new to perfume.</p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="images_coding/jomalon.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </section>
+
+       <!-- Oriental Detail Section -->
+       <section id="Oriental description" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #ADD2A1;">
+            <div class="hero-text">
+                <h1><strong>Oriental</strong></h1>
+                <p>Rich, warm, and mysteriously alluring</p>
+            </div>
+            <div class="hero-image">
+                <img src="images_coding/oriental.jpg" alt="Oriental Fragrance Image">
+            </div>
+        </div>
+    
+        <section class="grid-section" style="background-color: #FEFFF5;">
+            <!-- Description foral 1 -->
+            <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                <div style="flex: 1;">
+                    <h4>Description</h4><br>
+                    <p>Oriental fragrances are rich, warm, and deeply sensual. They often feature exotic 
+                        ingredients like amber, vanilla, musk, resins, and spices such as cinnamon or clove. 
+                        These scents are known for their intensity and lasting power, creating a luxurious 
+                        and mysterious aura that lingers in the air. Often described as bold and alluring, 
+                        oriental perfumes are perfect for evening wear or special occasions. They evoke 
+                        feelings of depth, romance, and drama—making them ideal for those who want their 
+                        fragrance to leave a strong impression. Many oriental scents blend floral, woody, 
+                        and spicy notes, resulting in complex layers that unfold over time. While 
+                        traditionally seen as more mature or sophisticated, modern takes on oriental 
+                        fragrances are becoming more versatile and wearable for all ages and genders.</p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="images_coding/tomford.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </section>
+
+     <!-- Perfume Concentration Levels Detail Section -->
+     <section id="Perfume Concentration Levels" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #FEF4DB;">
+            <div class="hero-text">
+                <h1><strong>Perfume<br>Concentration Levels</strong></h1>
+                <p>Stronger levels, longer-lasting scent.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images_coding/perfume_concentrate_grid.jpg" alt="Oriental Fragrance Image">
+            </div>
+        </div>
+    
+        <section class="grid-section" style="background-color: #FEFFF5;">
+            <!-- Description foral 1 -->
+            <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                <div style="flex: 1;">
+                    <h4>Description</h4><br>
+                    <p>Perfume concentration refers to the amount of pure fragrance oil in a perfume 
+                        formula. The higher the concentration, the stronger and longer-lasting the scent 
+                        will be. Understanding these levels can help you choose the right type of perfume 
+                        based on how intense or subtle you want your fragrance to be.</p><br>
+                        <br><p>1. Parfum (Extrait de Parfum)<br>
+                            The most concentrated type, with 20–30% fragrance oil. Long-lasting (8–12 hours) 
+                            and rich—ideal for special occasions.
+                        </p>
+                        <br><p>2. Eau de Parfum (EDP)<br>
+                            Contains 15–20% fragrance oil. Lasts 6–8 hours. Strong and versatile, perfect for 
+                            everyday wear.
+                        </p>
+                        <br><p>3. Parfum (Extrait de Parfum)<br>
+                            Lighter with 5–15% fragrance oil. Lasts 3–5 hours. Fresh and subtle—great 
+                            for daytime or warmer seasons.
+                        </p>
+                        <br><p>4. Eau de Cologne (EDC)<br>
+                            Lightest concentration (2–5%). Lasts up to 2 hours. Best for quick refresh or casual use.
+                        </p>
+                        
+                    
+                </div>
+                <div style="flex: 1;">
+                    <img src="images_coding/concentrate.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </section>
+
+      <!-- Test and Select a Perfume Level -->
+      <section id="Test and Select a Perfume Level" class="content-section hidden fade-in">
+        <div class="hero" style="background-color: #FEF4DB;">
+            <div class="hero-text">
+                <h1><strong>Test and Select<br>a Perfume Levels</strong></h1>
+                <p>Your scent, your lifestyle, your choice.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images_coding/perfume_level_grid.jpg" alt="Oriental Fragrance Image">
+            </div>
+        </div>
+    
+        <section class="grid-section" style="background-color: #FEFFF5;">
+            <!-- Description foral 1 -->
+            <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                <div style="flex: 1;">
+                    <h4>Description</h4><br>
+                    <p>Choosing the right perfume is a personal experience—it’s not just about 
+                        how a fragrance smells in the bottle, but how it interacts with your 
+                        unique body chemistry. Testing perfumes the right way helps you discover 
+                        a scent that truly suits you.
+                    </p>
+                        <br><p>- Don't Test Too Many at Once<br>
+                            Limit yourself to 2–3 scents at a time. Smelling too many perfumes in 
+                            a row can overwhelm your senses and make it hard to judge accurately.
+                        </p>
+                        <br><p>- Take Your Time<br>
+                            Give the perfume time to settle. The true scent can take up to 30 minutes 
+                            or more to reveal itself. Walk around and check in later to see how it 
+                            evolves on your skin. 
+                        </p>
+                        <br><p>- Know What You Like<br>
+                            Pay attention to the scent families you naturally gravitate toward—whether 
+                            that’s fresh citrus, romantic florals, or warm woods. Understanding your 
+                            preferences can narrow down your choices.
+                        </p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="images_coding/perfume _evel.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+        <!-- Based on Occasion & Personal Preference -->
+        <section id="Based on Occasion & Personal Preference" class="content-section hidden fade-in">
+            <div class="hero" style="background-color: #FEF4DB;">
+                <div class="hero-text">
+                    <h1><strong>Based on Occasion <br>& Personal Preference</strong></h1>
+                    <p>Choose your scent by mood and moment.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images_coding/occasion.jpg" alt="Occasion & Personal Preference Image">
+                </div>
+            </div>
+        
+            <section class="grid-section" style="background-color: #FEFFF5;">
+                <!-- Description foral 1 -->
+                <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+                    <div style="flex: 1;">
+                        <h4>Description</h4><br>
+                        <p>Perfume is a form of self-expression, and the right scent can elevate any moment 
+                            by reflecting your mood, personality, and the occasion. For daytime or work settings,
+                             light and clean scents like citrus, green, or soft floral notes are ideal—they’re 
+                             fresh, pleasant, and not overwhelming. In contrast, evenings and special events call 
+                             for deeper, richer fragrances such as oriental, woody, or spicy notes that leave a 
+                             strong, lasting impression. Casual, everyday moments are perfect for soft, 
+                             easy-to-wear perfumes that make you feel effortlessly confident, while romantic 
+                             dates are enhanced by warm, sensual scents with amber, vanilla, or musk. Your personal 
+                             style also plays a big role: if you prefer a minimal and fresh vibe, you might be 
+                             drawn to clean aquatic or citrus fragrances. Those who feel bold and confident may 
+                             gravitate toward intense woody, spicy, or oriental perfumes. If you’re soft and 
+                             romantic, floral, powdery, or gourmand notes will likely suit you. And for the 
+                             adventurous and unique, niche perfumes with unexpected combinations—like smoky, 
+                             green, or leathery notes—offer a distinctive olfactory experience.</p>
+                    </div>
+                    <div style="flex: 1;">
+                        <img src="images_coding/occasion_explain.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+    <!-- Apply Perfume Section -->
+    <section id="apply-perfume" class="content-section fade-in">
+        <div class="hero" style="background-color: #FEEBDB;">
+            <div class="hero-image">
+                <img src="images_coding/apply hero.jpg" alt="Apply Perfume Image">
+            </div>
+            <div class="hero-text">
+                <h1>How to <br> <strong>Apply Perfume</strong></h1>
+                <br>
+                <p>Learn the best ways to 
+                    <br>apply perfume for maximum effect.</p>
+            </div>
+        </div>
+
+        <section class="explore">
+            <h2>Explore Your Own Vibe</h2>
+            <p>Find your vibe through scent wisdom and inspiration</p>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid-item" onclick="showSection('Apply Perfume for Longevity')">
+                <img src="images_coding/longevity.jpg" alt="Perfume for Longevity">
+                <p>Apply Perfume for Longevity</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Mistakes when applying Perfume')">
+                <img src="images_coding/mistake.jpg" alt="Perfume Mistakes">
+                <p>Mistakes when applying Perfume</p>
+            </div>
+            <div class="grid-item" onclick="showSection('Layering Fragrances')">
+                <img src="images_coding/layering.jpg" alt="Layering Fragrances">
+                <p>Layering Fragrances</p>
+            </div>
+        </section>
+
+        <section class="quote">
+            <p>Perfume is like Music that you Wear</p>
+        </section>
+    </section>
+
+    <!-- Apply Perfume for Longevity Section -->
+<section id="Apply Perfume for Longevity" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #FEEBDB;">
+        <div class="hero-text">
+            <h1>Apply Perfume<br><strong>for Longevity</strong></h1>
+            <br>
+            <p>Keep your scent lingering beautifully from morning to night.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/longevity.jpg" alt="Apply Perfume for Longevity Example">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Question 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Description</h4><br>
+                <p>Wearing perfume is more than just a final step in your routine—it’s an art. To make 
+                    your fragrance last longer throughout the day, it’s important to apply it correctly 
+                    and strategically. Here are some simple but effective tips:
+                </p>
+                    <br><p><strong>1. Apply to Pulse Points</strong><br>
+                        Spray perfume on areas where your blood vessels are closest to the skin: wrists, 
+                        neck, behind the ears, inner elbows, and even behind the knees. These warm spots 
+                        help activate and diffuse the scent naturally.
+                    </p>
+                    <br><p><strong>2. Moisturize First</strong><br>
+                        Perfume lasts longer on hydrated skin. Use an unscented lotion or a matching 
+                        scented body cream before applying your perfume to lock in the fragrance.
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/longevity_explain1.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="images_coding/longevity_explain2.jpg" alt="Mistake 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div style="flex: 1;">
+                <p><strong>3. Don’t Rub—Let It Dry Naturally</strong><br>
+                    Avoid rubbing your wrists together after applying perfume. It breaks down the scent 
+                    molecules and shortens the lifespan of the fragrance. Instead, let it air dry for 
+                    the best effect.
+                    </p>
+                    <br><p><strong>4. Spray on Clothes & Hair</strong><br>
+                        A light mist on your clothes or hair can help the scent linger. Just be careful—some 
+                        perfumes can stain fabric or dry out hair, so test first or spray from a distance.
+                    </p>
+            </div>
+        </div>
+    </section>
+</section>
+
+ <!-- Mistakes when applying Perfume Section -->
+ <section id="Mistakes when applying Perfume" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #FEEBDB;">
+        <div class="hero-text">
+            <h1>Mistakes when<br><strong>applying Perfume</strong></h1>
+            <br>
+            <p>Common mistakes that can ruin your fragrance.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/mistake.jpg" alt="Mistakes when applying Perfume Example">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Question 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Description</h4><br>
+                <p>Although wearing perfume seems like a simple task, there are common mistakes that 
+                    can affect how the scent develops and lasts. Here are the most common errors to 
+                    avoid for the best fragrance experience:
+                </p><br>
+                    <br><p><strong>- Spraying Too Much</strong><br>
+                        Less is more when it comes to perfume. Over-spraying can overwhelm your senses 
+                        and those around you. Start with one or two spritzes and see how the fragrance 
+                        develops before adding more.
+                    </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/mistake_spraying.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="images_coding/mistake_hands.jpg" alt="Mistake 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div style="flex: 1;">
+                <p><strong>- Spraying Directly on Skin That’s Too Dry</strong><br>
+                    Dry skin doesn’t hold fragrance well, leading to faster evaporation. Always moisturize 
+                    your skin with an unscented lotion before applying perfume to make the scent last longer 
+                    and blend better.
+
+                </p>
+                <br><p><strong>- Rubbing Your Wrists Togethert</strong><br>
+                    When you rub your wrists after spraying perfume, you can crush the fragrance molecules, 
+                    changing how the scent unfolds. Let it dry naturally for the best longevity and scent 
+                    experience.
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- Layering Fragrances Section -->
+<section id="Layering Fragrances" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #FEEBDB;">
+        <div class="hero-text">
+            <h1><strong>Layering 
+                <br>Fragrances</strong></h1>
+           <br>
+            <p>Layering lets you get creative with how you smell</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/layering.jpg" alt="Layering Fragrances Example">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Question 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Description</h4><br>
+                <p>Layering fragrances is the art of combining different scents to create a personalized 
+                    and unique fragrance profile. By mixing multiple perfumes, you can emphasize certain 
+                    notes, enhance the longevity of your scent, or simply explore new scent dimensions. 
+                    The process allows for creativity and customization, making your fragrance feel truly 
+                    your own.</p>
+                    <br><p>To layer like a pro, start with a base scent you love—something warm and grounded like 
+                        a woody or oriental fragrance. Then, add a lighter, complementary scent such as citrus, 
+                        floral, or green notes. These accents should enhance the base without overpowering it. 
+                        Don’t be afraid to experiment: pair a spicy, intense perfume with something fresh and 
+                        clean for balance, or blend two different florals for a complex bouquet. The key is to 
+                        try out different combinations and trust your nose.</p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/layering_explain1.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    
+
+<!-- Store Perfume Section -->
+<section id="store-perfume" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #e0f0d9;">
+      <div class="hero-image">
+        <img src="images_coding/store_perfume_hero.jpg" alt="Perfume storage">
+      </div>
+      <div class="hero-text">
+        <h1>How to <br /><strong>Store Perfume</strong></h1>
+        <p>Keep your perfume fresh by storing it the right way</p>
+      </div>
+    </div>
+  
+    <section class="explore">
+      <h2>Explore Your Own Vibe</h2>
+      <p>
+        Find your vibe through scent wisdom and inspiration</p>
+    </section>
+  
+    <section class="grid-section" style="background-color: #e0f0d9;">
+      <div class="grid-item" onclick="showSection('ideal-storage')">
+        <img src="images_coding/ideal_storage.jpg" alt="Ideal Storage" />
+        <p>Ideal Storage Conditions</p>
+      </div>
+      <div class="grid-item" onclick="showSection('extend-shelf-life')">
+        <img src="images_coding/shelf_life.jpg" alt="Shelf Life" />
+        <p>Extend the Shelf Life of Perfume</p>
+      </div>
+    </section>
+  
+    <section class="quote">
+      <p>Perfume is like a new dress</p>
+    </section>
+  </section>
+  
+  <!-- Ideal Storage Conditions Section -->
+  <section id="ideal-storage" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #e0f0d9;">
+      <div class="hero-text">
+        <h1><strong>Ideal Storage Conditions</strong></h1>
+        <p>To keep your perfume fresh and long-lasting, storage matters.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images_coding/ideal_storage.jpg" alt="Ideal Storage" />
+      </div>
+    </div>
+  
+    <section class="grid-section" style="background-color: #FEFFF5;">
+      <!-- Block 1 -->
+      <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+        <div style="flex: 1;">
+          <h4>Why Proper Storage Matters</h4><br>
+          <p>
+            Properly storing your perfume is essential to preserving its original scent and 
+            ensuring it lasts as long as possible. Fragrances are delicate compositions that 
+            can degrade when exposed to environmental stressors like heat, humidity, light, and air. 
+            If not stored correctly, the scent can change in character, lose its vibrancy, or even 
+            go bad over time. That’s why it’s important to treat your perfume with the same care you’d 
+            give any luxury item.
+          </p>
+        </div>
+        <div style="flex: 1;">
+          <img src="images_coding/ideal_explain1.jpg" alt="Cool & Dark" style="width: 100%; border-radius: 8px;" />
+        </div>
+      </div>
+  
+      <!-- Block 2 -->
+      <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+        <div style="flex: 1;">
+          <img src="images_coding/ideal_explain2.jpg" alt="Avoid Humidity" style="width: 100%; border-radius: 8px;" />
+        </div>
+        <div style="flex: 1;">
+          <h4>Best ways for Perfume Storage</h4><br>
+          <p>
+            To keep your fragrance in top condition, store it in a cool, dry place away from 
+            direct sunlight and sudden temperature changes. Avoid placing bottles near windows, 
+            radiators, or in humid environments like bathrooms. Sunlight and heat can break down the 
+            perfume’s chemical structure, altering its scent. Also, always keep the cap tightly closed 
+            to prevent oxidation and evaporation. Storing your perfume in a drawer, box, or closed 
+            cabinet helps shield it from light and air, ensuring your scent stays fresh and true for 
+            as long as possible.
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+  <!-- Extend the Shelf Life of Perfume Section -->
+  <section id="extend-shelf-life" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #e0f0d9;">
+      <div class="hero-text">
+        <h1><strong>Extend the Shelf<br> Life of Perfume</strong></h1>
+        <p>Preserving your perfume is all about how you treat it</p>
+      </div>
+      <div class="hero-image">
+        <img src="images_coding/shelf_life.jpg" alt="Shelf Life" />
+      </div>
+    </div>
+
+  
+    <section class="grid-section" style="background-color: #FEFFF5;">
+      <!-- Block 1 -->
+      <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+        <div style="flex: 1;">
+          <h4>Avoid Temperature Fluctuations</h4><br>
+          <p>
+            Sudden changes in temperature can negatively impact the chemical composition of a perfume, 
+            causing it to deteriorate faster. Frequent exposure to both heat and cold can lead to the 
+            breakdown of the fragrance molecules, altering the scent and reducing its lifespan. To prevent 
+            this, avoid storing your perfume in places like windowsills, bathrooms, or cars—areas where 
+            the temperature can change dramatically throughout the day.
+          </p>
+        </div>
+        <div style="flex: 1;">
+          <img src="images_coding/shelflife_explain1.jpg" alt="Seal tight" style="width: 100%; border-radius: 8px;" />
+        </div>
+      </div>
+  
+      <!-- Block 2 -->
+      <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+        <div style="flex: 1;">
+          <img src="images_coding/shelflife_explain2.jpg" alt="Original box" style="width: 100%; border-radius: 8px;" />
+        </div>
+        <div style="flex: 1;">
+          <h4>Handle with Care</h4><br>
+          <p>
+            The material of your perfume bottle also plays a role in maintaining its quality. Glass bottles 
+            are ideal because they are non-reactive and better at preserving the fragrance’s original formula. 
+            Avoid plastic containers, as they can interact with the perfume over time. Additionally, refrain 
+            from shaking the bottle. While it might seem harmless, agitation can introduce air and destabilize 
+            the blend, subtly changing the scent over time. Always handle your perfume gently and store it in 
+            a stable, quiet spot.
+
+
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+
+<!-- Tips & Fun Fact Section -->
+<section id="tips-fun" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #d8e9e9;">
+        <div class="hero-image">
+            <img src="images_coding/tips_hero.jpg" alt="Perfume tips">
+        </div>
+        <div class="hero-text">
+            <h1>Tips & <br><strong>Fun Facts</strong></h1>
+            <br>
+            <p>Discover surprising facts and helpful tips about perfume.</p>
+        </div>
+    </div>
+
+    <section class="explore">
+        <h2>Explore Your Own Vibe</h2>
+        <p>Find your vibe through scent wisdom and inspiration</p>
+    </section>
+
+    <section class="grid-section" style="background-color: #d8e9e9;">
+        <div class="grid-item" onclick="showSection('Perfume changes throughout the day')">
+            <img src="images_coding/throughout.jpg" alt="Perfume Longevity">
+            <p>Perfume changes throughout the day</p>
+        </div>
+        <div class="grid-item" onclick="showSection('How Body chemistry affects perfume')">
+            <img src="images_coding/chemistry.jpg" alt="Perfume Mistakes">
+            <p>How Body chemistry affects perfume</p>
+        </div>
+        <div class="grid-item" onclick="showSection('Myths & Fun Facts')">
+            <img src="images_coding/myth_and_fact.jpg" alt="Layering Fragrances">
+            <p>Myths & Fun Facts</p>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>Perfume makes your best day</p>
+    </section>
+</section>
+
+<!-- Perfume changes throughout the day Section -->
+<section id="Perfume changes throughout the day" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #D3EDE8;">
+        <div class="hero-text">
+            <h1>Perfume changes<br><strong>throughout the day</strong></h1>
+            <br>
+            <p>Learn how your perfume unfolds in layers over time.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/throughout.jpg" alt="Perfume changes throughout the day Example">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Mistake 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <p>Perfume is not a static scent. It evolves throughout the day, with different notes coming 
+                    to the forefront at different times. Understanding these stages—top, middle, and base 
+                    notes—can help you appreciate how a fragrance develops over time and why it might smell 
+                    different hours after applying it.
+                </p><br>
+                    <br><p><strong>- Top Notes (First Impression)</strong><br>
+                        The top notes are the initial burst of fragrance that you experience immediately 
+                        after applying the perfume. These notes are typically light, fresh, and airy, often 
+                        featuring citrus, fruity, or herbal scents. The top notes are designed to create an 
+                        instant impression and are usually noticeable for the first 15–30 minutes. However, 
+                        these notes evaporate quickly, as they are made up of smaller, lighter molecules.
+                        This is why the fragrance seems to fade fast at the start.
+
+                    </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/throughout_topnote.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <!-- Mistake 2 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="images_coding/throughout_bottomnote.jpg" alt="Mistake 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div style="flex: 1;">
+                <p><strong>- Middle Notes (Heart of the Fragrance)</strong><br>
+                    Once the top notes have faded, the middle (or heart) notes start to emerge. These notes 
+                    represent the core of the perfume and are typically more complex. Middle notes often 
+                    include floral, spicy, or fruity scents that give the fragrance its character and body. 
+                    They usually last for 2 to 4 hours, making them the longest-lasting part of the fragrance. 
+                    As the top notes vanish, the middle notes are what you’ll experience most distinctly, 
+                    providing depth and warmth to the scent.
+
+
+                </p>
+                <br><p><strong>- Base Notes (Long-lasting Impression)</strong><br>
+                    As the perfume dries down, the base notes take over. These are the deeper, richer notes 
+                    that are felt after several hours of wear. Base notes include heavier scents like musk, 
+                    amber, vanilla, woods, or resin, and they provide the fragrance with its lasting power. 
+                    They tend to linger for 6 hours or more, and while they are often not immediately noticeable, 
+                    they are the ones that stick with you and leave a lingering trail of scent. The base notes 
+                    anchor the fragrance, making it feel more substantial and long-lasting.
+            </div>
+        </div>
+    </section>
+</section>
+
+ <!-- How Body chemistry affects perfume Section -->
+ <section id="How Body chemistry affects perfume" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #d8e9e9;">
+        <div class="hero-text">
+            <h1><strong>How Body chemistry <br>affects perfume Section</strong></h1>
+            <br>
+            <p>Scent shifts with your body chemistry.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/chemistry.jpg" alt="lavender-8490878_1280 Image">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Description foral 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Description</h4><br>
+                <p>Perfume doesn’t smell the same on everyone. The way a fragrance develops and lasts on 
+                    your skin can be significantly influenced by your body chemistry. Factors such as your 
+                    skin type, body temperature, diet, and even hormones can alter how a scent smells and
+                    how long it lasts. Here’s how your unique body chemistry can affect your perfume experience:</p><br>
+                    <br><p>- Skin Type Matters<br>
+                        Your skin type plays a crucial role in how perfume interacts with your body. For example, 
+                        Dry skin tends to absorb and evaporate perfume more quickly, which can cause fragrances 
+                        to fade faster. If you have dry skin, you may need to apply more perfume or choose 
+                        fragrances with heavier base notes. Oily skin holds onto perfume longer because the oils 
+                        in your skin slow down the evaporation process. This means perfumes tend to last longer 
+                        on oily skin, and the scent may be more intense.
+                    </p>
+                    <br><p>- Body Temperature<br>
+                        Your body temperature can also affect how a fragrance develops throughout the day. When 
+                        you're warm, your skin releases more scent, making the perfume appear stronger and more 
+                        intense. On the other hand, when you're cold, the fragrance will be less noticeable as 
+                        the scent molecules are less active. This is why perfumes tend to smell more intense in 
+                        hot weather and may feel less prominent in cooler climates.
+                    </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/chemistry_body.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- Myths & Fun Facts -->
+<section id="Myths & Fun Facts" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #D3EDE8;">
+        <div class="hero-text">
+            <h1>Myths<br><strong>& Fun Facts</strong></h1>
+            <br>
+            <p>Fun facts and common myths <br>about perfume people might not know</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/myth_and_fact.jpg" alt="Perfume changes throughout the day Example">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Myths  -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Myths</h4><br>
+                <p>Some people believe that wearing perfume behind your ears makes the scent last longer—but 
+                    the skin behind your ears is oilier and warmer, which can actually distort or overly intensify 
+                    the fragrance. Another common myth is that the more perfume you apply, the longer it will last.
+                    In reality, over-spraying doesn’t increase longevity—it just overwhelms those around you. 
+                    There’s also a superstition in some cultures that gifting perfume will make a relationship 
+                    fade, unless the recipient gives a coin in return to "buy" it and break the curse.</p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/myth_ear.jpg" alt="Mistake 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <!-- Fun Facts -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="images_coding/funfact_old.jpg" alt="Mistake 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div style="flex: 1;">
+                <h4>Fun Facts</h4><br>
+                <p>In ancient Rome, wealthy citizens would scent not only their bodies but also their furniture, 
+                    clothes, and even pets. Some emperors had fountains filled with rose water during feasts! 
+                    Also, the word “perfume” comes from the Latin per fumum, meaning “through smoke,” because early 
+                    fragrances were often released through burning incense. And interestingly, your nose can become 
+                    "blind" to a scent you wear regularly—so if you think your perfume disappeared, it might just 
+                    be that your brain has tuned it out.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<!-- Seasonal Perfume Section -->
+<section id="seasonal-perfume" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #ece9fb;">
+        <div class="hero-image">
+            <img src="images_coding/season_hero.jpg" alt="Seasonal Perfume Image">
+        </div>
+        <div class="hero-text">
+            <h1>Personal <br><strong>Seasonal Perfume</strong></h1>
+            <br>
+            <p>Discover seasonal scents 
+                <br>fit your vibe throughout the year.</p>
+        </div>
+    </div>
+
+    <section class="explore">
+        <h2>Explore Your Own Vibe</h2>
+        <p>Find your vibe through scent wisdom and inspiration</p>
+    </section>
+
+    <section class="grid-section" style="background-color: #ece9fb;">
+        <div class="grid-item" onclick="showSection('spring-perfume-details')">
+            <img src="images_coding/spring.jpg" alt="Spring">
+            <p>Spring</p>
+        </div>
+        <div class="grid-item" onclick="showSection('summer-perfume-details')">
+            <img src="images_coding/summer.jpg" alt="Summer">
+            <p>Summer</p>
+        </div>
+        <div class="grid-item" onclick="showSection('fall-perfume-details')">
+            <img src="images_coding/fall.jpg" alt="Fall">
+            <p>Fall</p>
+        </div>
+        <div class="grid-item" onclick="showSection('winter-perfume-details')">
+            <img src="images_coding/winter.jpg" alt="Winter">
+            <p>Winter</p>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>Scent is memory</p>
+    </section>
+</section>
+
+<!-- Spring Perfume Detail Section -->
+<section id="spring-perfume-details" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #ece9fb;">
+        <div class="hero-text">
+            <h1><strong>Spring</strong></h1>
+            <p>Discover the perfect scents to complement the freshness of spring.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/spring.jpg" alt="Spring Perfume">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Recommendation 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Recommendation</h4><br>
+                <p>Chloé Eau de Parfum is a quintessential spring fragrance, embodying the essence of blooming 
+                    flowers and fresh, breezy days. The scent opens with a soft, elegant bouquet of rose and 
+                    peony, creating a delicate floral profile. Lychee adds a touch of fruity sweetness that 
+                    brightens the composition, while freesia brings a clean, airy quality that enhances the 
+                    lightness of the fragrance. This fragrance is perfect for the warmer days of spring, offering 
+                    a subtle and refined scent that feels like a gentle breeze on a sunny afternoon. Whether you're 
+                    enjoying a day out in nature or attending a spring celebration, Chloé Eau de Parfum is a 
+                    perfect companion for any occasion.
+                </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/spring_perfume.jpg" alt="Recommendation 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+    </section>
+</section>
+
+<!-- Summer Perfume Detail Section -->
+<section id="summer-perfume-details" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #ece9fb;">
+        <div class="hero-text">
+            <h1><strong>Summer</strong></h1>
+            <p>Discover the perfect scents to complement the freshness of summer.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/summer.jpg" alt="Spring Perfume">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Recommendation 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Recommendation</h4><br>
+                <p>Dior Sauvage Eau de Toilette captures the bold, invigorating spirit of summer. With its 
+                    bright opening of zesty bergamot, this fragrance immediately energizes the senses. The 
+                    spicy Sichuan pepper adds an exciting kick, while the woody base of ambroxan and cedar 
+                    gives the scent depth and warmth, making it feel fresh yet grounded. This fragrance is 
+                    perfect for hot summer days, providing a refreshing and cooling sensation that can keep 
+                    you feeling revitalized. Its lasting intensity makes it an excellent choice for both 
+                    outdoor adventures and warm evenings. Whether you're at a summer barbecue or a night out, 
+                    Dior Sauvage offers the perfect balance of citrusy freshness and spicy warmth for the season.
+                </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/summer_perfume.jpeg" alt="Recommendation 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- Fall Perfume Detail Section -->
+<section id="fall-perfume-details" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #ece9fb;">
+        <div class="hero-text">
+            <h1><strong>Fall</strong></h1>
+            <p>Discover the perfect scents to complement the freshness of fall.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/fall.jpg" alt="Fall Perfume">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Recommendation 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Recommendation</h4><br>
+                <p>As the leaves turn and the air becomes crisp, Aesop Marrakesh Eau de Parfum offers the 
+                    warmth and richness that perfectly complements the fall season. This fragrance blends 
+                    spicy top notes of clove and cumin with a comforting heart of amber and sandalwood. 
+                    The result is a warm, earthy scent that feels cozy and sophisticated at the same time. 
+                    The spicy and woody elements come together to create a deep, rich aroma that is both 
+                    exotic and grounding, making it ideal for the cool, crisp days of autumn. Whether you're 
+                    enjoying a quiet evening at home or a walk through a park covered in autumn leaves, 
+                    Aesop Marrakesh enhances the season’s calming yet dynamic atmosphere with its warmth and depth.
+                </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/fall_perfume.jpg" alt="Recommendation 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- Winter Perfume Detail Section -->
+<section id="winter-perfume-details" class="content-section hidden fade-in">
+    <div class="hero" style="background-color: #ece9fb;">
+        <div class="hero-text">
+            <h1><strong>Winter</strong></h1>
+            <p>Discover the perfect scents to complement the freshness of winter.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images_coding/winter.jpg" alt="Winter Perfume">
+        </div>
+    </div>
+
+    <section class="grid-section" style="background-color: #FEFFF5;">
+        <!-- Recommendation 1 -->
+        <div class="text-image-pair" style="display: flex; gap: 40px; padding: 50px; align-items: center;">
+            <div style="flex: 1;">
+                <h4>Recommendation</h4><br>
+                <p>When winter arrives, the need for rich, comforting fragrances grows, and Diptyque Tam Dao 
+                    Eau de Toilette fits the bill perfectly. With its creamy, woody scent of sandalwood, cedarwood, 
+                    and myrtle, this fragrance evokes warmth and coziness, making it ideal for cold winter days. 
+                    The sandalwood offers a soft, creamy base that provides a sense of comfort and luxury, while 
+                    the cedarwood adds an aromatic freshness that balances the richness. The slightly floral myrtle 
+                    note gives the fragrance a touch of softness, making it feel inviting and elegant. Whether 
+                    you're gathered around a fire or strolling through a snowy landscape, Diptyque Tam Dao provides 
+                    a calming, sophisticated fragrance that suits the tranquility and beauty of winter.
+                </p>
+            </div>
+            <div style="flex: 1;">
+                <img src="images_coding/winter_winter_perfume.jpg" alt="Recommendation 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Left side footer -->
+        <div class="footer-nav">
+          <h4>Explore</h4><br>
+          <ul>
+            <li><a href="#" onclick="showSection('choose-perfume')">Choose Perfume</a></li>
+            <li><a href="#" onclick="showSection('apply-perfume')">Apply Perfume</a></li>
+            <li><a href="#" onclick="showSection('store-perfume')">Store Perfume</a></li>
+            <li><a href="#" onclick="showSection('tips-fun')">Tips & Fun Facts</a></li>
+            <li><a href="#" onclick="showSection('seasonal-perfume')">Seasonal Perfume</a></li>
+          </ul>
+        </div>
+      
+        <!-- Right side footer -->
+        <div class="footer-content">
+          <div class="footer-row">
+            <p class="footer-label"><i class="fas fa-phone-alt"></i> Contact</p>
+            <p class="footer-value"><a href="#" onclick="showPhonePopup()">416-275-0982</a></p>
+          </div>
+          <div class="footer-row">
+            <p class="footer-label"><i class="fas fa-envelope"></i> Email</p>
+            <p class="footer-value"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaehong.hwang@ocadu.ca" target="_blank">jaehong.hwang@ocadu.ca</a></p>
+          </div>
+          <div class="footer-row">
+            <p class="footer-label"><i class="fas fa-info-circle"></i> Info</p>
+            <p class="footer-value"><a href="https://www.ocadu.ca/" target="_blank">Graphic Design in OCAD University</a></p>
+          </div>
+        </div>
+      </footer>
+
+<!-- Popup for Phone Message -->
+<div id="phone-popup" class="popup-overlay hidden">
+    <div class="popup">
+        <span class="close-btn" onclick="closePopup()">?��</span>
+        <div class="popup-content">
+            <p>?��? If you have any questions, please call this number:</p>
+            <p class="phone-number">416-275-0982</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</div>
+
+    </footer>
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    
+
+    <!-- JavaScript for Section Switching -->
+    <script>
+        const sectionHistory = [];
+    
+        function showSection(sectionId) {
+            const currentVisible = document.querySelector('.content-section:not(.hidden)');
+            if (currentVisible && currentVisible.id !== sectionId) {
+                sectionHistory.push(currentVisible.id);
+            }
+    
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+    
+            document.getElementById(sectionId).classList.remove('hidden');
+    
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.classList.remove('active');
+            });
+    
+            let activeNav = document.querySelector(`nav ul li a[onclick="showSection('${sectionId}')"]`);
+            if (activeNav) activeNav.classList.add('active');
+        }
+    
+        function goBack() {
+            const lastSection = sectionHistory.pop();
+            if (lastSection) {
+                showSection(lastSection);
+            } else {
+                console.log("No previous section found.");
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            const backButton = document.getElementById("back-button");
+            if (backButton) {
+                backButton.addEventListener("click", goBack);
+            }
+        });
+
+        window.history.pushState({ page: 1 }, "title 1", window.location.href);
+
+window.addEventListener('popstate', function(event) {
+    if (event.state && event.state.page === 1) {
+        console.log('Back button was pressed!');
+        const lastSection = sectionHistory.pop();
+        if (lastSection) {
+            showSection(lastSection);
+        } else {
+            console.log("No previous section found.");
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const backButton = document.getElementById("back-button");
+    if (backButton) {
+        backButton.addEventListener("click", goBack);
+    }
+});
+
+const video = document.getElementById("chooseVideo");
+  const toggleBtn = document.getElementById("videoToggle");
+
+  toggleBtn.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      toggleBtn.textContent = "⏸️";
+    } else {
+      video.pause();
+      toggleBtn.textContent = "▶️";
+    }
+  });
+    </script>
+    
+    
+
+</body>
+</html>
